@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="checkout-header">Checkout</h1>
+    </header>
+    <main id="checkout-body">
+        <div class="form-col">
+            <form action="#" method="GET" id="checkout-form">
+                <div class="contact">
+                    <h4>Contact Information</h4>
+                    <div class="contact-form-body">
+                        <div class="form-box">
+                            <label for="email">Email</label>
+                            <div class="input-container">
+                                <i class="fas fa-envelope icon"></i>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email...">
+                            </div>
+
+                        </div>
+                        <div class="form-box">
+                            <label for="phone">Phone</label>
+                            <div class="input-container">
+                                <i class="fas fa-phone-alt icon"></i>
+                                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Enter your email...">
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+                <div class="shipping-address">
+                    <h4>Shipping address</h4>
+                    <div class="shipping-address-body">
+                        <div class="form-box">
+                            <label for="name">Full Name</label>
+                            <div class="input-container">
+                                <i class="fas fa-user icon"></i>
+                                <input type="text" name="full-name" id="name" required
+                                    placeholder="Enter your Full Name...">
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <label for="address">Address</label>
+                            <div class="input-container">
+                                <i class="fas fa-home icon"></i>
+                                <input type="text" name="address" id="address" required
+                                    placeholder="Enter your address...">
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <label for="city">City</label>
+                            <div class="input-container">
+                                <i class="fas fa-city icon"></i>
+                                <input type="text" name="city" id="city" required placeholder="Enter your city...">
+                            </div>
+                        </div>
+                        <div class="form-box country-post-body">
+                            <div>
+                                <label for="country">Country</label><br>
+                                <div class="input-container">
+                                    <i class="fas fa-globe-europe icon"></i>
+                                    <select name="country" id="country">
+                                        <option value="Turkey">Turkey</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="USA">USA</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="UK">UK</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="post-code">Post Code</label><br>
+                                <div class="input-container">
+                                    <i class="fas fa-mail-bulk icon"></i>
+                                    <input type="number" name="post-code" id="post-code" required
+                                        placeholder="Enter your postal code...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <div class="input-container"></div>
+                            <input type="checkbox" name="information" id="information">
+                            <label for="information"> See this information next time</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="continue">
+                    <button class="btn">
+                        Continue
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="checkout-col">
+            <div class="product-body">
+                <img src="./IMG/photo1.png" alt="bag" class="product-img">
+                <div class="product-text">
+                    <h4>Vintage Backbag</h4>
+                    <p><span class="product-price">$54.99</span> <del><small>$94.99</small></del> </p>
+                    <div class="product-number">
+                        <input type=button value="-" class="math-icon">
+                        <input type=button id="sonuc" value="1">
+                        <input type=button value="+" class="math-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-body">
+                <img src="./IMG/photo2.png" alt="shoes" class="product-img">
+                <div class="product-text">
+                    <h4>Vintage Backbag</h4>
+                    <p><span class="product-price">$74.99</span> <del><small>$94.99</small></del> </p>
+                    <div class="product-number">
+                        <input type=button onclick="azalt()" value="-" class="math-icon">
+                        <input type=button id="sonuc" value="1">
+                        <input type=button onclick="arttir()" value="+" class="math-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="check">
+                <hr>
+                <div class="check-body">
+                    <p>Shipping</p>
+                    <p class="price">$19</p>
+                </div>
+                <hr>
+                <div class="check-body">
+                    <p>Total</p>
+                    <p class="price">$148.98</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
