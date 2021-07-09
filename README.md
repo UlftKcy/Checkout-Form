@@ -1,8 +1,8 @@
-Project - 004 : Checkout Form (HC-04)
+# Project - 004 : Checkout Form (HC-04)
 Purpose of the this coding challenge is to write a code that make a checkout form.
 
 
-User story;
+## User story;
 
 I can input email, phone, full name, address, city, country, and postal code
 
