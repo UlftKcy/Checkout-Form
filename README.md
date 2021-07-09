@@ -15,3 +15,5 @@ When I click submit button or press enter, I can see a warning if validation fai
 When I click submit button or press enter, I can see a successful alert if validation succeeds
 
 🔥 You don’t need to use JS in this challenge but use correct input types and validation
+
+## Happy coding!
